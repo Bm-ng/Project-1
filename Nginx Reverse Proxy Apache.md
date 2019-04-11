@@ -1,3 +1,15 @@
+## Nội dung: 
+- Trong hệ thống mạng thông tin, reverse proxy là một loại proxy server trung gian giữa một máy chủ và các clients gởi tới các yêu cầu. Nó kiểm soát yêu cầu của các clients, nếu hợp lệ, sẽ luân chuyển đến các servers thích ứng.[1] Trái ngược với một proxy chuyển tiếp (forward proxy), là một trung gian cho các clients liên hệ với nó liên lạc với bất kỳ máy chủ nào, Reverse proxy là một trung gian cho các máy chủ liên hệ với nó được liên lạc bởi bất kỳ clients nào.
+
+- Ưu điểm lớn nhất của việc sử dụng Reverse proxy là khả năng quản lý tập trung. Nó giúp kiểm soát mọi requests do clients gửi lên các servers mà được bảo vệ.
+- Reverse proxy có thể che giấu sự tồn tại và các đặc điểm của các servers thực sự được dùng.
+- Trong trường hợp các trang giao thức bảo mật HTTPS, một máy chủ mạng có thể không tự mã hóa SSL hay TLS, mà giao nhiệm vụ này cho reverse proxy mà có thể được trang bị phần cứng ssl accelerator card.
+- Load balancing, proxy có thể chia đều các yêu cầu của các máy khách tới các servers.
+- Proxy có thể nén nội dung, làm cho việc truy cập trở nên nhanh chóng.
+- Proxy có thể được dùng như là một application firewall để chống đỡ các cuộc tấn công (như Tấn công từ chối dịch vụ) vào các ứng dụng web.
+- Spoon feeding: một trang mạng động có thể được tạo ra bởi máy chủ mạng, proxy caching nội dung web server gửi và "rót" từ từ đến các máy khách hoạt động chậm. Máy chủ mạng không phải đợi máy khách.[2]
+- Nhằm giúp giảm tải máy chủ mạng proxy có thể cache các nội dung tĩnh như hình ảnh, tập tin.
+
 ## 1.Cài đặt apache:
 - Cài đặt apache trên Centos7:
 ```sh
