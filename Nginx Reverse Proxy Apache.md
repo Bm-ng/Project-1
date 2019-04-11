@@ -130,6 +130,30 @@ Khởi động lại Apache
 
 
 
+## 7. Cài đặt Mariadb:
+
+```sh
+# yum install MariaDB-server MariaDB-client -y
+# systemctl start mariadb
+# systemctl enable mariadb
+# systemctl status mariadb
+```
+## 8. Cài đặt PHP
+
+```sh
+#yum install php php-mysql
+```
+- Khởi động lại httpd
+
+```sh
+$ sudo systemctl restart httpd.service
+```
+
+
+
+
+
+
 
 
 
